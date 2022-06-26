@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Main } from "./Components/PageRoutes";
+import { MediaContainerDesktop } from "./Components/Shared/Containers";
 
 function App() {
+  const [theme] = useState({
+    state: "light",
+    bg: "bg-white",
+    textColor: "text-gray-400",
+    textHover: "text-sky-500",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MediaContainerDesktop
+      className={`container ${theme.bg} w-full h-full flex flex-row overflow-hidden `}
+    >
+      <Main theme={theme} />
+    </MediaContainerDesktop>
   );
 }
 
