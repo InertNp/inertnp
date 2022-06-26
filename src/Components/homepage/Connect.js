@@ -19,7 +19,7 @@ export function Connect() {
                 icon={faGithub}
                 size={`5x`}
              
-              />
+              /> 
             </a>
             <a href={aboutme.linkedin} className={`pl-3 hover:text-sky-500`}>
               <FontAwesomeIcon
