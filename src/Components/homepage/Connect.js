@@ -5,7 +5,7 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
-  faDiscord,
+  faDiscord,  
 } from "@fortawesome/free-brands-svg-icons";
 export function Connect() {
   return (
