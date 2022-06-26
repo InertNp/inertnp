@@ -14,6 +14,7 @@ export const aboutme = {
   github: "https://github.com/InertNp",
   twitter: "https://twitter.com/Inert_np",
   linkedin: "https://www.linkedin.com/in/abhishek-ghimire-a3b46a215/",
+  discord: "InerT#9361",
 };
 export const skills = [
   {
