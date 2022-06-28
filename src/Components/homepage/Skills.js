@@ -9,7 +9,7 @@ export function Skills() {
   return (
     <Container className="w-11/12 bg-gray-100">
       <div className="flex justify-start w-full ml-20 pl-20 mb-5">
-        <h1 className={`font-bold text-xl`}>I Have Learned:</h1>
+        <h1 className={`font-bold text-xl`}>My Skills:</h1>
       </div>
       <SubContainer className=" grid grid-cols-4 gap-0">
         {skills.map((e) => {
