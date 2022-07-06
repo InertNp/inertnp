@@ -7,7 +7,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 export function Skills() {
   return (
-    <Container className="w-11/12 bg-gray-100">
+    <Container className=" bg-gray-100">
       <div className="flex justify-start w-full ml-20 pl-20 mb-5">
         <h1 className={`font-bold text-xl`}>My Skills:</h1>
       </div>

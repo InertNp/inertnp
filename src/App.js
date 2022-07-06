@@ -12,7 +12,7 @@ function App() {
 
   return (
     <MediaContainerDesktop
-      className={`container ${theme.bg} w-full h-full flex flex-row overflow-hidden `}
+      className={`container-full ${theme.bg} h-full flex flex-row overflow-hidden `}
     >
       <Main theme={theme} />
     </MediaContainerDesktop>

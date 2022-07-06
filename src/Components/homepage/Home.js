@@ -8,7 +8,7 @@ import { Time } from "../Time/Time";
 
 export function Home({ theme }) {
   return (
-    <Container className={`bg-gray-200 w-11/12`}>
+    <Container className={`bg-gray-200 `}>
       <Time />
       <SubContainer className={`bg-gray-100 shadow-xl flex flex-row`}>
         <img src={img} alt={`Inert`} className={`clear-left w-6/12 h-full object-cover`} />

@@ -9,7 +9,7 @@ import {
 import { faT } from "@fortawesome/free-solid-svg-icons";
 
 export const aboutme = {
-  name: "InertNp",
+  name: "Abhishek Ghimire",
   desc: "Hi , I am an uprising and energetic Web Designer and Web Developer.",
   github: "https://github.com/InertNp",
   twitter: "https://twitter.com/Inert_np",
