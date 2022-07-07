@@ -13,10 +13,11 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
 export const SubContainer = styled.div`
   width: 80%;
   height: 80%;
+
   /* border: 2px black solid; */
 `;

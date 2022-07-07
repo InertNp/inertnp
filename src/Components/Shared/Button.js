@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 export const NavButton = ({
   bg,
   textColor,
@@ -9,17 +10,17 @@ export const NavButton = ({
   active,
 }) => {
   return (
-    <div
+    <motion.div
       className={`${bg} ${textColor} hover:${textHover} flex justify-center `}
     >
       <NavLink
         to={path}
         className={(e) => (e.isActive ? `${textHover}` : `${textColor}`)}
       >
-        <button>
+        <motion.button whileHover={{ scale: 1.2 }}>
           <FontAwesomeIcon icon={value} size={`2x`} />
-        </button>
+        </motion.button>
       </NavLink>
-    </div>
+    </motion.div>
   );
 };

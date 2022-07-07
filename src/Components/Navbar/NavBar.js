@@ -6,7 +6,7 @@ export function NavBar({ theme }) {
     <div
       className={`w-1/12 h-full flex justify-center items-center ${theme.bg}`}
     >
-      <nav className={`flex flex-col h-72 justify-evenly`}>
+      <nav className={`flex flex-col h-72 justify-evenly w-full `}>
         <NavButton
           value={faHome}
           bg={theme.bg}

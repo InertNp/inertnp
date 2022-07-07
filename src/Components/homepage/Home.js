@@ -1,17 +1,28 @@
-import { Container, SubContainer } from "../Shared/Containers";
+import { SubContainer } from "../Shared/Containers";
 import { aboutme } from "../../Data/Aboutme";
 import img from "../../img/me.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { Time } from "../Time/Time";
-
-export function Home({ theme }) {
+import { containerVariant } from "../Shared/Theme";
+import { motion } from "framer-motion";
+export function Home({}) {
   return (
-    <Container className={`bg-gray-200 `}>
+    <motion.div
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className=" h-11/12 w-full flex items-center justify-center bg-gray-200"
+    >
       <Time />
       <SubContainer className={`bg-gray-100 shadow-xl flex flex-row`}>
-        <img src={img} alt={`Inert`} className={`clear-left w-6/12 h-full object-cover`} />
+        <img
+          src={img}
+          alt={`Inert`}
+          className={`clear-left w-6/12 h-full object-cover`}
+        />
         <div className="flex flex-col justify-center">
           <h1 className={` text-center text-5xl font-extrabold p-3`}>
             {aboutme.name}
@@ -29,6 +40,6 @@ export function Home({ theme }) {
           </button>
         </div>
       </SubContainer>
-    </Container>
+    </motion.div>
   );
 }
